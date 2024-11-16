@@ -29,7 +29,7 @@ python src/align_dataset_mtcnn.py Dataset/FaceData/raw Dataset/FaceData/processe
 ```
 ## Step 5: Download Pre-trained Model
 Download and extract the pre-trained model from the link below, then place it into the Models directory:
-Download Pre-trained Model
+[Download Pre-trained Model](https://drive.google.com/file/d/1EXPBSXwTaqrSC0OhUdXNmKSh9qJUQ55-/view)
 ## Step 6: Train the Face Recognition Model
 To train the model for face recognition, run the following command:
 ```bash
