@@ -1,3 +1,25 @@
+# Face Attendance System
+
+This guide helps you set up and run the Face Attendance system using a pre-configured repository. Follow the steps below to prepare and use the system.
+
+## Step 1: Clone the Repository and Prepare Directories
+Open the Command Prompt (CMD) and run the following command to clone the repository:
+```bash
+git clone https://github.com/RP502/Face_attendance.git
+
+Inside the Face_attendance directory:
+
+Create a folder named Dataset.
+Inside Dataset, create a folder named FaceData.
+Within FaceData, create two subfolders: raw and processed.
+Create a folder named Models. This folder will be used later to store the trained model.
+
+## Step 2: Prepare Training Images
+Place all image folders for training into the raw folder created above.
+
+Step 3: Install Dependencies
+Run the following command to install the necessary libraries:
+
 Face Attendance System
 This guide helps you set up and run the Face Attendance system using a pre-configured repository. Follow the steps below to prepare and use the system.
 
