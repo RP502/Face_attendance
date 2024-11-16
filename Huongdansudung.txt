@@ -1,0 +1,16 @@
+B1:  bật cmd lên và nhập câu lệnh: 
+    + git clone https://github.com/RP502/Face_attendance.git
+    + Tạo thư mục Dataset trong Face_attendance, trong đó tạo tiếp thư mục FaceData và dưới FaceData là tạo tiếp 2 thư mục raw và processed.
+    + Tạo thư mục Models trong Face_attendance để chờ sẵn tẹo lưu model sau.
+
+Sau đó chuẩn bị ảnh để Train: bỏ tất cả thư mục ảnh vào thư mục raw đã tạo ở trên 
+
+B2: tải các thư viện từ  về: pip install -r requirements.txt
+
+Sau đó gõ câu lệnh sau để tiền xử lý ảnh: python src/align_dataset_mtcnn.py  Dataset/FaceData/raw Dataset/FaceData/processed --image_size 160 --margin 32  --random_order --gpu_memory_fraction 0.25 
+
+B3: Tải về giải nén và bỏ vào thư mục Models: https://drive.google.com/file/d/1EXPBSXwTaqrSC0OhUdXNmKSh9qJUQ55-/view
+
+B4: Tiến hành train model để nhận diện khuôn mặt: python src/classifier.py TRAIN Dataset/FaceData/processed Models/20180402-114759.pb Models/facemodel.pkl --batch_size 1000
+
+B5: chạy câu lệnh sau để chạy chương trinh: python src/face_rec_cam.py 
